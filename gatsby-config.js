@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    url: 'https://lumen.netlify.com',
-    title: 'Blog by John Doe',
-    subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    url: 'https://heechan.me',
+    title: '양희찬 개발 블로그',
+    subtitle: 'Developer who ❤️ to create stuff',
     copyright: '© All rights reserved.',
     disqusShortname: '',
     menu: [
@@ -13,20 +13,13 @@ module.exports = {
       {
         label: 'About me',
         path: '/about/'
-      },
-      {
-        label: 'Contact me',
-        path: '/contact/'
       }
     ],
     author: {
-      name: 'John Doe',
-      email: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
-      rss: '#',
-      vk: '#'
+      name: '양희찬',
+      email: 'yang@heechan.kr',
+      github: 'yangroro',
+      rss: 'rss.xml'
     }
   },
   plugins: [
@@ -120,7 +113,7 @@ module.exports = {
       options: { trackingId: 'UA-73379983-2' }
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: 'gatsby-plugin-google-fonts',
       options: {
         fonts: [`roboto\:400,400i,500,700`]
       }

@@ -1,6 +1,6 @@
 ---
 title: PHPDBG를 이용해서 PHPUnit Code Coverage 커버리지 측정 시간 단축하기
-date: "2018-05-05T19:46:37.121Z"
+date: "2018-05-05T19:46:37.121"
 layout: post
 draft: false
 path: "/posts/shorten-phpunit-code-coverage-excution-time/"
@@ -9,7 +9,7 @@ tags:
   - "PHP"
   - "Test"
   - "Development"
-description: "phpunit-code-coverage으로 인해 느려진 테스트 실행 시간을 단축해보자"
+description: "phpunit-code-coverage로 인해 느려진 테스트 실행 시간을 단축해보자"
 ---
 
 8percent의 [코드 커버리지 80% 넘긴 썰(8percent)](https://brunch.co.kr/@leehosung/43) 이 글을 읽고 나서 오픈소스도 아닌 회사 프로젝트가 코드 커버리지 80%를 넘겼다는 이야기와 함께 `어떻게 코드 커버리지를 80%에 도달하게 되었는가?` 라는 과정이 인상적이었다. 그래서 코드 커버리지 측정을 도입했고 그 과정에서 있었던 작은 삽질을 소개하고자 한다. 

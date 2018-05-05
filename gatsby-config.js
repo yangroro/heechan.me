@@ -4,15 +4,11 @@ module.exports = {
     title: '양희찬 개발 블로그',
     subtitle: 'Developer who ❤️ to create',
     copyright: '© All rights reserved.',
-    disqusShortname: '',
+    disqusShortname: 'heechan-blog',
     menu: [
       {
         label: 'Articles',
         path: '/'
-      },
-      {
-        label: 'About me',
-        path: '/about/'
       }
     ],
     author: {
@@ -92,9 +88,7 @@ module.exports = {
         plugins: [
           {
             resolve: 'gatsby-remark-images',
-            options: {
-              maxWidth: 960
-            }
+            options: { maxWidth: 960 }
           },
           {
             resolve: 'gatsby-remark-responsive-iframe',
@@ -110,13 +104,11 @@ module.exports = {
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-google-analytics',
-      options: { trackingId: 'UA-73379983-2' }
+      options: { trackingId: 'UA-118790145-1' }
     },
     {
       resolve: 'gatsby-plugin-google-fonts',
-      options: {
-        fonts: [`roboto\:400,400i,500,700`]
-      }
+      options: { fonts: ['roboto:400,400i,500,700'] }
     },
     {
       resolve: 'gatsby-plugin-sitemap',

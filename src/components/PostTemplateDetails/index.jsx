@@ -6,8 +6,9 @@ import './style.scss';
 
 class PostTemplateDetails extends React.Component {
   render() {
-    const { subtitle, author } = this.props.data.site.siteMetadata;
+    const { subtitle, url } = this.props.data.site.siteMetadata;
     const post = this.props.data.markdownRemark;
+    const post_url = url + this.props.location.pathname;
     const tags = post.fields.tagSlugs;
 
     const homeBlock = (
@@ -42,18 +43,22 @@ class PostTemplateDetails extends React.Component {
         <div className="post-single">
           <div className="post-single__inner">
             <h1 className="post-single__title">{post.frontmatter.title}</h1>
-            <div className="post-single__body" dangerouslySetInnerHTML={{ __html: post.html }} />
             <div className="post-single__date">
-              <em>Published {moment(post.frontmatter.date).format('D MMM YYYY')}</em>
+              <em>{moment(post.frontmatter.date).format('YYYY년 M월 D일')}</em>
             </div>
+            <div className="post-single__body" dangerouslySetInnerHTML={{ __html: post.html }} />
           </div>
           <div className="post-single__footer">
             {tagsBlock}
             <hr />
             <p className="post-single__footer-text">
               {subtitle}
-              <a href={`https://twitter.com/${author.twitter}`} target="_blank" rel="noopener noreferrer">
-                <br /> <strong>{author.name}</strong> on Twitter
+              <br />
+              <a className="icon-twitter" href={`https://twitter.com/share?url=${post_url}`} target="_blank" rel="noopener noreferrer">
+                Twitter
+              </a>
+              <a className="icon-facebook" href={`http://www.facebook.com/sharer.php?u=${post_url}`} target="_blank" rel="noopener noreferrer">
+                Facebook
               </a>
             </p>
             {commentsBlock}

@@ -8,7 +8,7 @@ class PostTemplateDetails extends React.Component {
   render() {
     const { subtitle, url } = this.props.data.site.siteMetadata;
     const post = this.props.data.markdownRemark;
-    const post_url = url + this.props.location.pathname;
+    const postUrl = url + this.props.location.pathname;
     const tags = post.fields.tagSlugs;
 
     const homeBlock = (
@@ -54,10 +54,10 @@ class PostTemplateDetails extends React.Component {
             <p className="post-single__footer-text">
               {subtitle}
               <br />
-              <a className="icon-twitter" href={`https://twitter.com/share?url=${post_url}`} target="_blank" rel="noopener noreferrer">
+              <a className="icon-twitter" href={`https://twitter.com/share?url=${postUrl}`} target="_blank" rel="noopener noreferrer">
                 Twitter
               </a>
-              <a className="icon-facebook" href={`http://www.facebook.com/sharer.php?u=${post_url}`} target="_blank" rel="noopener noreferrer">
+              <a className="icon-facebook" href={`http://www.facebook.com/sharer.php?u=${postUrl}`} target="_blank" rel="noopener noreferrer">
                 Facebook
               </a>
             </p>

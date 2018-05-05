@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     url: 'https://heechan.me',
-    title: '양희찬 개발 블로그',
+    title: 'yangroro',
     subtitle: 'Developer who ❤️ to create',
     copyright: '© All rights reserved.',
     disqusShortname: 'heechan-blog',

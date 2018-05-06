@@ -120,6 +120,14 @@
     }
 }
 
+@include breakpoint-xs {
+    .post-single {
+        & img {
+            max-width: 80vw;
+        }
+    }
+}
+
 @include breakpoint-sm {
     .post-single {
         &__footer {

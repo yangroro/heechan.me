@@ -22,7 +22,7 @@ description: "Docker의 기본적인 사용 방법을 둘러보고 내 어플리
 
 > **Docker** is a [computer program](https://en.wikipedia.org/wiki/Computer_program) that performs [operating-system-level virtualization](https://en.wikipedia.org/wiki/Operating-system-level_virtualization) also known as [containerization](https://en.wikipedia.org/wiki/Operating-system-level_virtualization).
 >
-> - [Wikipedia](https://en.wikipedia.org/wiki/Docker_(software))
+> [- Wikipedia](https://en.wikipedia.org/wiki/Docker_(software))
 
 위키피디아에서는 Docker를 컨테이너라고 알려진 OS 수준 가상화를 제공하는 프로그램이라고 정의하고 있다. 가상화하면 VM 인데 컨테이너는 또 뭘까? 우리가 아는 컨테이너는 화물선에 실리는 화물 컨테이너 뿐인데 말이다. 컨테이너 가상화도 화물 컨테이너처럼 규격화되고 추상화해줘서 Host머신에 상관 없이 구동할 수 있게 해주는 프로그램이다.
 

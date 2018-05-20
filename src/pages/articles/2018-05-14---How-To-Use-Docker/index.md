@@ -69,16 +69,22 @@ Hello World
 
 # 제 어플리케이션을 어떻게 Docker 이미지로 만들죠?
 
-이제 어플리케이션을 Docker 이미지로 만들어보자. 먼저 시나리오를 특정 URL로 들어오는 조회 수를 저장하고 조회시마다 조회 수 카운트를 올리는 간단한 Node.js 어플리케이션을 만들고 어플리케이션을 Dokcer 컨테이너로 만들어 보자. 
+먼저 어떤 어플리케이션을 만들지 시나리오를 정해보자. 아래 요구사항의 간단한 조회수 어플리케이션을 만들고 Docker 이미지로 만들어보자.
+
+1. 특정 URL로 들어오는 조회 수를 저장
+2. 해당 URL로 접속이 들어올 때마다 조회수를 1씩 증가시킨다.
+3. 페이지에 대한 응답으로는 조회수를 응답한다.
 
 조회 수를 저장할 데이터베이스로는 Redis를 사용하고 패키지 관리는 yarn을 사용했다.
 
-```Sh
+```sh
 # redis-server install
 # mac에서 redis server install하기
 $ brew install redis 
+
 # 데비안에서 redis server install
 $ sudo apt-get install redis-server -y
+
 # yarn 패키지 초기화 및 redis javascript 클라이언트 설치
 $ yarn init
 $ yarn add redis
@@ -151,7 +157,7 @@ CMD ["index.js"]
 
 이제 작성한 Dockerfile로 Docker Image를 빌드하고 컨테이너를 만들어보자!
 
-```Sh
+```shell
 $ docker build . -t mydocker:latest
 Sending build context to Docker daemon  393.7kB
 Step 1/9 : FROM node:9.11

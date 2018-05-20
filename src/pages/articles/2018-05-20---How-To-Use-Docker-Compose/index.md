@@ -14,7 +14,7 @@ description: "Docker 어플리케이션을 Docker Compose로 정의해 파일로
 
 ![docker-compose](./images/docker-compose.png)
 
- 지난번 [글(Docker 사용방법 둘러보기)](https://heechan.me/posts/how-to-use-docker/)에서 간단한 URL 기반의 조회수 어플리케이션을 Node JS와 Redis로 만들었다. 지난 글에서 Node js 어플리케이션을 실행시키기 위해서 다음과 같은 명령어를 사용해야 했다. 
+ 지난번 [글(Docker 사용방법 둘러보기)](https://heechan.me/posts/how-to-use-docker/)에서 간단한 URL 기반의 조회수 어플리케이션을 Node JS와 Redis로 만들었다. 지난 글에서 Node JS 어플리케이션을 실행시키기 위해서 다음과 같은 명령어를 사용해야 했다. 
 
 `docker run -p 8080:8080 --env REDIS_URL=redis://heechan-macbook-13.local mydocker:latest` 
 

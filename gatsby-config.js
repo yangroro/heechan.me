@@ -9,6 +9,10 @@ module.exports = {
       {
         label: 'Articles',
         path: '/'
+      },
+      {
+        label: 'About Me',
+        path: '/about/ko'
       }
     ],
     author: {

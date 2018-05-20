@@ -44,9 +44,11 @@ https://hub.docker.com github처럼 Docker 이미지를 공유할 수 있는 서
 
 Docker 컨테이너는 사실상의 표준이다. 현재 Travis, Jenkins, Gitlab CI, Circle CI 등 다양한 CI/CD 툴에서 Docker를 지원한다. 아까 언급했던 Managed CI/CD 시스템을 사용한다면 복잡한 설정 없이 Docker 이미지를 바로 사용할 수 있다. 
 
-# 그래서 Docker는 어떻게 쓰는 거죠?
+# 그래서 그 좋은 Docker는 어떻게 쓰는 거죠?
 
-먼저 `Hello World`를 찍어보자.([Docker 설치](https://www.docker.com/community-edition#/download)는 되어있다고 가정한다.) `docker run docker:lastest echo "Hello World"`를 입력하면 아래와 같은 화면이 나온다. 아래 Hello world 명령어를 보면서 Docker 명령어를 뜯어보자.
+시작하기 전에 몇가지 개념을 짚고 넘어가자. 먼저 도커 이미지, 컨테이너가 있다. 이미지는 docker build 커맨드를 통해서 만들어진 스냅샷이다. 그리고 컨테이너는 이미지를 통해 만들어진 인스턴스이다. OOP에서 Class와 객체와 같은 개념이라고 생각하면 편하게 이해할 수 있다.
+
+ `Hello World`를 찍어보자.([Docker 설치](https://www.docker.com/community-edition#/download)는 되어있다고 가정한다.) `docker run docker:latest echo "Hello World"`를 입력하면 아래와 같은 화면이 나온다. 아래 Hello world 명령어를 보면서 Docker 명령어를 뜯어보자.
 
 ```sh
 $ docker run docker:latest echo "Hello World"

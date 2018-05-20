@@ -1,6 +1,6 @@
 ---
 title: Docker 사용 방법 둘러보기
-date: "2018-05-14T19:46:37.121"
+date: "2018-05-14"
 layout: post
 draft: false
 path: "/posts/how-to-use-docker/"

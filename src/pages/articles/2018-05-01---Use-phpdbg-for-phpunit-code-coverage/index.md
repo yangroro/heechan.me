@@ -1,6 +1,6 @@
 ---
 title: PHPDBG를 이용해서 PHPUnit Code Coverage 커버리지 측정 시간 단축하기
-date: "2018-05-05T19:46:37.121"
+date: "2018-05-05"
 layout: post
 draft: false
 path: "/posts/shorten-phpunit-code-coverage-excution-time/"

@@ -94,7 +94,12 @@ module.exports = {
             resolve: 'gatsby-remark-responsive-iframe',
             options: { wrapperStyle: 'margin-bottom: 1.0725rem' }
           },
-          'gatsby-remark-prismjs',
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              inlineCodeMarker: { sh: 'bash', shell: 'bash' }
+            }
+          },
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants'
         ]

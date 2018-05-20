@@ -42,7 +42,7 @@ https://hub.docker.com github처럼 Docker 이미지를 공유할 수 있는 서
 
 ### CI/CD 
 
-Docker 컨테이너는 사실상의 표준이다. 현재 Travis, Jenkins, Gitlab CI, Circle CI 등 다양한 CI/CD 툴에서 Docker를 지원한다. 아까 언급했던 Managed CI/CD 시스템을 사용한다면 복잡한 설정 없이 Docker 이미지를 바로 사용할 수 있다. 
+Docker 컨테이너는 사실상의 표준이다. 현재 Travis, Jenkins, Gitlab CI, Circle CI 등 다양한 CI/CD 툴에서 Docker를 지원한다. 이런 다양한 Managed CI/CD 시스템중 하나를 사용한다면 복잡한 설정 없이 Docker를 바로 사용할 수 있다. 
 
 # 그래서 그 좋은 Docker는 어떻게 쓰는 거죠?
 

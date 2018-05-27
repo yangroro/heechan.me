@@ -1,6 +1,6 @@
 ---
 title: Docker Compose로 멀티 컨테이너 Docker 어플리케이션 만들기
-date: "2018-05-20"
+date: "2018-05-27"
 layout: post
 draft: false
 path: "/posts/how-to-use-docker-compose/"
@@ -33,7 +33,7 @@ Docker Compose 정의는 YAML 파일 형식으로 작성하는데 기본 파일�
 ```yaml
 # 사용할 Docker compose 문법의 버전을 정의한다. 
 # 특정 버전 이상에서만 사용할 수 있는 옵션이나 
-# deprecate되는 옵션들이 있기 때문에 필요한 버전을 잘 정의해야 한다.
+# deprecated되는 옵션들이 있기 때문에 필요한 버전을 잘 정의해야 한다.
 version: "3"
 services:
   # 실행할 컨테이너 이름을 정의한다. 
@@ -156,11 +156,9 @@ view-counter_1  | start to connect redis: redis://redis
 
 ## Docker Compose로 할 수 있는 일
 
-위에서 소개한 기능들은 Docker Compose의 기능중 아주 기본적인 기능 몇가지만을 소개했다. 이 외에도 Docker Compose로 아주 다양한 일을 할 수 있는데 이는 [Docker Compose compose-file](https://docs.docker.com/compose/compose-file/#service-configuration-reference)항목을 천천히 읽어 보는 것을 추천한다. 그리고 작성한 Docker Compose를 이용해서 다른 서비스에도 응용 가능하다. 대표적인 예로 들 수 있는 것이 AWS의 [Elastic Container Service](https://aws.amazon.com/ecs/)이다. ECS에서는 컨테이너 어플리케이션을 배포하기 위해서 [ECS Task Definition](https://docs.aws.amazon.com/ko_kr/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html)이라는 것을 작성해야 한다. ECS Task Definition은 `docker-compose.yml`처럼 어플리케이션의 설정등을 정의하는 파일인데 이것을 `docker-compose.yml`을 이용하여 변환하는 기능등을 제공한다. 물론 모든 기능이 1대1로 사용 가능한 것은 아니지만 AWS와 로컬 개발환경에서 거의 같은 설정을 이용 가능하다는 장점이 있다.
+위에서 소개한 기능들은 Docker Compose의 기능중 아주 기본적인 기능 몇가지만을 소개했다. 이 외에도 Docker Compose로 아주 다양한 일을 할 수 있는데 이는 [Docker Compose compose-file](https://docs.docker.com/compose/compose-file/#service-configuration-reference)항목을 천천히 읽어 보는 것을 추천한다. 그리고 작성한 Docker Compose를 이용해서 다른 서비스에도 응용 가능하다. 대표적인 예로 들 수 있는 것이 AWS의 [Elastic Container Service](https://aws.amazon.com/ecs/)이다. ECS에서는 컨테이너 어플리케이션을 배포하기 위해서 [ECS Task Definition](https://docs.aws.amazon.com/ko_kr/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html)이라는 것을 작성해야 한다. ECS Task Definition은 `docker-compose.yml`처럼 어플리케이션의 설정등을 정의하는 파일인데 이것을 `docker-compose.yml`을 이용하여 생성하는 기능을 제공한다. 물론 모든 기능이 1대1로 사용 가능한 것은 아니지만 AWS와 로컬 개발환경에서 거의 같은 설정을 이용 가능하다는 장점이 있다.
 
-
-
-다음 글에서는 AWS ECS를 통해 컨테이너 어플리케이션을 배포 하는 것을 다뤄보겠다. 
+다음 글에서는 AWS ECS를 통해 이렇게 작성한 컨테이너 어플리케이션을 배포 하는 것을 다뤄보겠다. 
 
 
 

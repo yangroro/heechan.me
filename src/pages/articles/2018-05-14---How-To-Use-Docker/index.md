@@ -204,4 +204,4 @@ $ docker run -p 8080:8080 --env REDIS_URL=redis://heechan-macbook-13.local mydoc
 
 이제 `docker container ls` 명령을 사용하면 실행 중인 컨테이너를 확인할 수 있다. `docker container stop 컨테이너 ID` 명령어를 사용하면 컨테이너를 종료할 수도 있다. 
 
-원래 이번 글에서 docker compose를 사용해보는 것까지 쓰려고 했지만 내용이 길어져 다음 글에서 다루려고 한다.
+원래 이번 글에서 docker compose를 사용해보는 것까지 쓰려고 했지만 내용이 길어져 [다음 글](/posts/how-to-use-docker-compose/)에서 다루려고 한다.

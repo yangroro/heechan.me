@@ -16,6 +16,7 @@ path: "/about/ko/"
 - 깃헙: [https://github.com/yangroro](https://github.com/yangroro)
 - 블로그: [https://heechan.me](https://heechan.me)
 - 페이스북: [https://facebook.com/heechanyan](https://facebook.com/heechanyan)
+- 인스타그램: [https://instagram.com/yangroro_](https://instagram.com/yangroro_)
 
 ### 경력
 - 벨루가: 2019년 1월 ~ 2019년 7월
